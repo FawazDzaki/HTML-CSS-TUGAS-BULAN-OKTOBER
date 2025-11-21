@@ -1,0 +1,331 @@
+.background {
+  background-color: ghostwhite;
+}
+
+.container h1 {
+  text-align: center; /* bikin isi kontainer rata tengah */
+  color: #1332ac;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+nav {
+  text-align: center;
+}
+
+nav a,
+.nav a {
+  color: blue;
+  text-decoration: none;
+  border-radius: 22px;
+  background: #fff;
+  padding: 6px 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.active {
+  background: blue;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav a:hover{
+  background: blue;
+  color: white;
+  border: 1px solid #9d9fa4;
+}
+
+.logo {
+  margin-top: 40px;
+}
+
+.logo img {
+  display: block; /* ubah gambar jadi block */
+  margin: 0 auto; /* kasih auto margin biar ke tengah */
+  width: 50px;
+  height: 40px;
+}
+
+#subjudul h4,
+hr {
+  color: gray;
+  text-align: center;
+}
+
+#subjudul h2,
+h3 {
+  color: #1332ac;
+}
+
+.section-title {
+  padding-left: 20px; /* ruang agar teks tidak mepet garis */
+  border-left: 4px solid #d3a11a; /* garis aksen di kiri */
+}
+
+.photo {
+  width: 200px !important; /* atau 250px sesuai kebutuhan */
+  height: 200px !important; /* samakan dengan width untuk bulat sempurna */
+  object-fit: cover; /* isi area tanpa distorsi */
+  border-radius: 50%;
+  border: 3px solid #e5e7eb;
+  text-align: left;
+  margin-left: 20px !important;
+}
+
+.avatar {
+  width: 200px !important; /* atau 250px sesuai kebutuhan */
+  height: 200px !important; /* samakan dengan width untuk bulat sempurna */
+  object-fit: cover; /* isi area tanpa distorsi */
+  border-radius: 50%;
+  border: 3px solid #e5e7eb;
+  text-align: left;
+  margin-left: 20px !important;
+}
+
+.box-1 {
+  background: #ffffff;
+  border: 1px solid #9d9fa4;
+  border-radius: 12px;
+  margin-top: 70px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.box {
+  background: #ffffff;
+  border: 1px solid #9d9fa4;
+  border-radius: 12px;
+  margin-top: 20px;
+  border-radius: 12px;
+  padding: 12px;
+  width: 100%;
+}
+
+.quote {
+  color: #d3a11a;
+}
+
+/*JADWAL*/
+
+.table-jadwal {
+  width: 100%;
+  border-collapse: collapse; /*ngapusblock block*/
+  text-align: center;
+  margin: auto;
+  border: 1px solid #333;
+}
+.table-jadwal th {
+  background-color: #1332ac;
+  color: white;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.table-jadwal td {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/*END JADWAL*/
+
+/*GALLERY*/
+/* Container utama */
+.flexbox-area {
+  display: flex;
+  flex-wrap: wrap;
+  /* biar bisa turun ke baris baru */
+  justify-content: center; /* biar card di tengah */
+  /* gap: 20px; jarak antar card */
+  padding: 20px;
+}
+
+/* Setiap card */
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 20%;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+/* Gambar di card */
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Teks di bawah gambar */
+.card figcaption {
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+}
+
+.video-box {
+  position: relative;
+  aspect-ratio: 16 / 9; /* jaga proporsi */
+  /* overflow: hidden; */
+  border-radius: 12px;
+}
+
+.video-box iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+}
+
+/* END GALLERY*/
+
+/*FORM*/
+
+/* ===== FORM 2 KOLOM ===== */
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  align-items: center;
+  gap: 20px;
+  margin: 15px;
+}
+
+.form-row .label {
+  flex: 1; /* dua kolom sama besar */
+}
+
+.label-topik {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.topik-container {
+  display: flex;
+  gap: 25px; /* jarak antar checkbox */
+  flex-wrap: wrap; /* kalau layar kecil bisa turun */
+  width: 50%; /* hanya setengah dari lebar form */
+  margin-top: 8px;
+  align-items: center; /* sejajarkan secara vertikal */
+}
+
+.topik-container label {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* jarak antara kotak & teks */
+  font-weight: normal;
+}
+
+.topik-container input[type="checkbox"] {
+  width: auto;
+}
+
+/* textarea tetap full width */
+
+.label.full textarea {
+  width: 100%;
+}
+
+/* Rapiin input */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.grid {
+  text-align: right;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*FORM*/
+
+.footer {
+  margin-top: 50px;
+  text-align: center;
+  color: gray;
+}
+
+/* Mobile  */
+@media screen and (max-width: 599px) {
+  nav {
+    padding-inline: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  nav a {
+    /* display: flex; */
+    /* flex-direction: column; */
+    border: 1px solid #9d9fa4;
+    margin: 3px;
+  }
+
+  .video {
+    width: 100%;
+    padding: auto;
+  }
+
+  .flexbox-area {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 100%;
+  }
+  /* galeri */
+
+  /* table */
+  .table-container {
+    overflow-x: auto !important;
+  }
+
+
+  .form-row {
+    flex-direction: column; /* ubah arah flex jadi vertikal */
+  }
+
+  .form-row .label {
+    width: 100%; /* pastikan tiap input isi penuh */
+  }
+
+  .topik-container {
+    width: 100%; /* biar checkbox juga lebar penuh */
+  }
+}
+
+/* tablet */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .card {
+    width: 40%;
+  }
+}
